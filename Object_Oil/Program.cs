@@ -1,3 +1,5 @@
+﻿using FuelPriceNamespace;
+
 class Programm
 {
     static void Main()
