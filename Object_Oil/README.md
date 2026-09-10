@@ -20,5 +20,3 @@
 https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
 
 Форматирование дополнительно проверено инструментом `dotnet format`.
-
-Команда для клонирования ветки `git clone -b laba_1  --single-branch https://github.com/Sywice/information_systems_arch.belikov-ki25.git`
