@@ -5,14 +5,14 @@ namespace FuelPriceNamespace
 {
     public class GasStation
     {
-        public double location_X { get; set; }
-        public double location_Y { get; set; }
+        public double LocationX { get; set; }
+        public double LocationY { get; set; }
         public string Name { get; set; }
 
         public GasStation(double x, double y, string name)
         {
-            location_X = x;
-            location_Y = y;
+            LocationX = x;
+            LocationY = y;
             Name = name;
         }
 

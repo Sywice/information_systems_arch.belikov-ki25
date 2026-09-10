@@ -1,6 +1,6 @@
 ﻿using FuelPriceNamespace;
 
-class Programm
+class Program
 {
     static void Main()
     {
@@ -11,11 +11,15 @@ class Programm
         {
             string[] data = line.Split();
 
-            if (data[0] == "OIL")
+            if (data[0] == "OIL") 
+            {
                 oils.Add(FuelPrice.Parse(line));
-
-            if (data[0] == "GASSTATION")
+            }
+                
+            else if (data[0] == "GASSTATION")
+            {
                 stations.Add(GasStation.Parse(line));
+            }
         }
 
         foreach (FuelPrice oil in oils)
@@ -23,6 +27,6 @@ class Programm
 
         foreach (GasStation station in stations)
             Console.WriteLine(
-                $"{station.Name} {station.location_X} {station.location_Y}");
+                $"{station.Name} {station.LocationX} {station.LocationY}");
     }
 }
