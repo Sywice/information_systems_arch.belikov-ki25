@@ -18,7 +18,7 @@ namespace FuelPriceNamespace
 
         public static FuelPrice Parse(string input)
         {
-            string[] tokens = Regex.Split(input.Trim(), @"\s+");
+            string[] tokens = Regex.Split(input.Trim(), @"\s+")[1..];
 
             double price = 0;
             DateTime date = default;
